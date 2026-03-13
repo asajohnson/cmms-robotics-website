@@ -8,12 +8,32 @@ hamburger.addEventListener('click', () => {
   hamburger.setAttribute('aria-expanded', isActive);
 });
 
-// Close mobile nav when a link is clicked
-mainNav.querySelectorAll('.nav-link').forEach(link => {
+// Close mobile nav when a nav-link is clicked (not dropdown toggles)
+mainNav.querySelectorAll('.nav-link:not(.nav-dropdown-toggle)').forEach(link => {
   link.addEventListener('click', () => {
     hamburger.classList.remove('active');
     mainNav.classList.remove('active');
     hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Close mobile nav when a dropdown menu link is clicked
+mainNav.querySelectorAll('.nav-dropdown-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    mainNav.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Mobile dropdown toggle (tap to expand on mobile)
+document.querySelectorAll('.nav-dropdown-toggle').forEach(toggle => {
+  toggle.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      const dropdown = toggle.closest('.nav-dropdown');
+      dropdown.classList.toggle('active');
+    }
   });
 });
 

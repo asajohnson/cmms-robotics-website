@@ -20,11 +20,20 @@
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="logo-link">
-        <span class="logo-text">CMART</span>
+        <img src="assets/images/logo.png" alt="Cougar Mountain Alloy Robotics Teams logo" class="logo-img" width="45" height="45">
       </a>
       <nav class="main-nav" id="mainNav">
         <a href="#about" class="nav-link">About</a>
         <a href="#teams" class="nav-link">Teams</a>
+        <div class="nav-dropdown">
+          <a href="season-recaps.html" class="nav-link nav-dropdown-toggle">Recaps</a>
+          <div class="nav-dropdown-menu">
+            <a href="season-recaps.html#season-2025">2025</a>
+            <a href="season-recaps.html#season-2024">2024</a>
+            <a href="season-recaps.html#season-2023">2023</a>
+            <a href="season-recaps.html#season-2022">2022</a>
+          </div>
+        </div>
         <a href="#sponsors" class="nav-link">Sponsors</a>
         <a href="#contact" class="nav-link">Contact</a>
       </nav>
@@ -52,6 +61,26 @@
       <h1 class="hero-title">Cougar Mountain<br><span class="gold">Alloy</span> Robotics</h1>
       <p class="hero-subtitle">An alliance of FIRST Robotics teams based at Cougar Mountain Middle School in Issaquah, Washington.</p>
       <a href="#contact" class="btn btn-primary">Get Involved</a>
+    </div>
+  </section>
+
+  <!-- Stats Banner -->
+  <section class="stats-banner">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Students Served...and Counting</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">5</span>
+          <span class="stat-label">FLL Teams</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">4+</span>
+          <span class="stat-label">Years of FIRST Robotics</span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -101,29 +130,126 @@
     <div class="container">
       <h2 class="section-title">Our Teams</h2>
       <p class="section-intro">We are currently home to five FIRST LEGO League (FLL) teams, with aspirations to grow into FIRST Tech Challenge (FTC) and beyond.</p>
-      <div class="teams-grid">
+      <div class="teams-grid teams-grid-5">
         <div class="team-card">
-          <div class="team-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-              <circle cx="9" cy="7" r="4"/>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-            </svg>
+          <div class="team-card-logo">
+            <img src="assets/images/hacking-hippos.png" alt="Hacking Hippos logo">
           </div>
-          <h3>FLL Teams</h3>
-          <p>Five active FIRST LEGO League teams competing, learning, and having fun.</p>
+          <div class="team-number">FLL #58890</div>
+          <h3>Hacking Hippos</h3>
         </div>
         <div class="team-card">
-          <div class="team-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-            </svg>
+          <div class="team-card-logo">
+            <img src="assets/images/matrix-masters.png" alt="Matrix Masters logo">
           </div>
-          <h3>Future FTC Team</h3>
-          <p>We're working toward launching a FIRST Tech Challenge team to give our students the next level of competition.</p>
+          <div class="team-number">FLL #63419</div>
+          <h3>Matrix Masters</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-logo">
+            <img src="assets/images/wonton-warriors.png" alt="Wonton Warriors logo">
+          </div>
+          <div class="team-number">FLL #70393</div>
+          <h3>Wonton Warriors</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-logo">
+            <img src="assets/images/project-chicken-united.png" alt="Project Chicken United logo">
+          </div>
+          <div class="team-number">FLL #68512</div>
+          <h3>Project Chicken United</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card-logo">
+            <img src="assets/images/robo-roosters.png" alt="Robo Roosters logo">
+          </div>
+          <div class="team-number">FLL #74411</div>
+          <h3>Robo Roosters</h3>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Team Profiles -->
+  <section class="section" id="team-profiles">
+    <div class="container">
+      <h2 class="section-title">Meet Our Teams</h2>
+
+      <div class="team-profile" id="hacking-hippos">
+        <div class="team-profile-logo">
+          <img src="assets/images/hacking-hippos.png" alt="Hacking Hippos logo">
+        </div>
+        <div class="team-profile-info">
+          <h3>Hacking Hippos <span class="team-profile-number">FLL #58890</span></h3>
+          <div class="awards">
+            <h4>Awards</h4>
+            <ul>
+              <li>Awards coming soon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-profile" id="matrix-masters">
+        <div class="team-profile-logo">
+          <img src="assets/images/matrix-masters.png" alt="Matrix Masters logo">
+        </div>
+        <div class="team-profile-info">
+          <h3>Matrix Masters <span class="team-profile-number">FLL #63419</span></h3>
+          <div class="awards">
+            <h4>Awards</h4>
+            <ul>
+              <li>Awards coming soon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-profile" id="wonton-warriors">
+        <div class="team-profile-logo">
+          <img src="assets/images/wonton-warriors.png" alt="Wonton Warriors logo">
+        </div>
+        <div class="team-profile-info">
+          <h3>Wonton Warriors <span class="team-profile-number">FLL #70393</span></h3>
+          <div class="awards">
+            <h4>Awards</h4>
+            <ul>
+              <li>Awards coming soon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-profile" id="project-chicken-united">
+        <div class="team-profile-logo">
+          <img src="assets/images/project-chicken-united.png" alt="Project Chicken United logo">
+        </div>
+        <div class="team-profile-info">
+          <h3>Project Chicken United <span class="team-profile-number">FLL #68512</span></h3>
+          <div class="awards">
+            <h4>Awards</h4>
+            <ul>
+              <li>Awards coming soon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-profile" id="robo-roosters">
+        <div class="team-profile-logo">
+          <img src="assets/images/robo-roosters.png" alt="Robo Roosters logo">
+        </div>
+        <div class="team-profile-info">
+          <h3>Robo Roosters <span class="team-profile-number">FLL #74411</span></h3>
+          <div class="awards">
+            <h4>Awards</h4>
+            <ul>
+              <li>Awards coming soon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
